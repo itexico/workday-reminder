@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      body {
+        width: 315px;
+        text-align: center;
+      }
+
+      #input-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      ::-webkit-calendar-menu {
+        display: block;
+        top: 0;
+        left: 0;
+        background: #0000;
+        position: absolute;
+        transform: scale(12);
+      }
+
+      #title {
+        padding: 0.5em;
+        padding-top: 0;
+      }
+
+      .timeInput {
+        padding: 0.5em;
+        font-size: 1em;
+        min-width: 120px;
+      }
+
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+        padding: 0.5em;
+        border: 1px solid #e3e3e3;
+        text-align: left;
+        margin-bottom: 0.5em;
+        gap: 8px;
+        justify-content: space-between;
+      }
+
+      #saveBtn {
+        background-color: rgb(3, 155, 229);
+        color: white;
+        border: none;
+        padding: 0.8em;
+        cursor: pointer;
+        font-size: 1.1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        border-radius: 4px;
+        box-shadow: 0 4px #999;
+      }
+
+      #saveBtn:hover {
+        background-color: rgb(2, 119, 189);
+      }
+
+      #saveBtn:active {
+        background-color: rgb(0, 94, 148);
+        box-shadow: 0 2px #666;
+        transform: translateY(2px);
+      }
+
+      .checkbox-label {
+        display: flex;
+        gap: 8px;
+      }
+    </style>
+    <script src="../js/workday.js"></script>
+  </head>
+
+  <body>
+    <div id="input-container">
+      <h3>Workday Reminder</h3>
+      <div class="checkbox-container">
+        <div class="checkbox-label">
+          <input type="checkbox" id="dailyReminder" />
+          <label for="dailyReminder">Daily Reminders</label>
+        </div>
+        <input class="timeInput" type="time" id="dailyTime" />
+      </div>
+      <div class="checkbox-container">
+        <div class="checkbox-label">
+          <input type="checkbox" id="weeklyReminder" />
+          <label for="dailyReminder">End of week Reminders (on Friday)</label>
+        </div>
+        <input class="timeInput" type="time" id="fridayTime" />
+      </div>
+      <div class="checkbox-container">
+        <div class="checkbox-label">
+          <input type="checkbox" id="playSound" />
+          <label for="playSound">Play Sound</label>
+        </div>
+      </div>
+
+      <button id="saveBtn">Save</button>
+    </div>
+  </body>
+</html>

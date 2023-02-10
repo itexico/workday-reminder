@@ -14,11 +14,11 @@ Also an alert is displayed every 15th and 30th to remember to review current per
 
 You can clone the repo
 
-> git clone https://github.com/alcasas/workday-reminder.git
+> git clone https://github.com/itexico/workday-reminder.git
 
 Or download the compressed file and decompress it
 
-> [https://github.com/alcasas/workday-reminder/archive/master.zip](https://github.com/alcasas/workday-reminder/archive/master.zip)
+> [https://github.com/itexico/workday-reminder/archive/master.zip](https://github.com/itexico/workday-reminder/archive/master.zip)
 
 Then:
 
